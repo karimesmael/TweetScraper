@@ -12,7 +12,6 @@ async function fetchTweets(twitterUsername) {
 
   // Wait for the tweets to load
   await page.waitForSelector("article");
-  //#id__vzh2m6xs21k
 
   // Extract tweets
   const tweets = await page.evaluate(() => {
